@@ -9,3 +9,20 @@ During each iteration, particles adjust their velocity by considering both their
 
 As the particles move, they continuously refine their positions to discover improved solutions. The process repeats until a predefined stopping criterion is satisfied (e.g., reaching a max number of iterations or achieving desired accuracy).
 
+## Parameters:
+Several key parameters must be initialized at the start of the PSO algorithm:
+
+**Nbpcl**: Number of particles in the swarm.
+**MaxIter**: Maximum number of iterations.
+**Vmax**: Maximum allowed velocity for particles.
+**MaxW**: Maximum inertia weight.
+**MinW**: Minimum inertia weight.
+**c1**: Personal acceleration factor, influencing a particle’s movement toward its own best position.
+**c2**: Social acceleration factor, guiding a particle toward the swarm’s best position.
+**pclPos**: Current position of a particle in the search space.
+**pclVel**: Current velocity of a particle, determining its movement.
+**pclBestPos**: The particle's best position yet.
+**pclBestCost**: The particle's best function value yet.
+**GBestPos**: The swarm's best particle's position.
+**GBestCost**: The swarm's best particle's best function value yet.
+
